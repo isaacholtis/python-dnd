@@ -60,7 +60,7 @@ class Main:
         for i in range(len(dice) - 1):
             if dice[i] == '+':
                 location = i + 1
-        additive = dice[location]
+        additive = dice[location:2000]
         multi = int(multi)
         rolls = int(rolls)
         additive = int(additive)
