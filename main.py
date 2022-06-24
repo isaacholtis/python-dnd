@@ -17,10 +17,8 @@ if(os.path.exists("players.json")):
         if playerInfo[player][3] != 0:
             print(f"{playerName} also adds {playerInfo[player][3]} to their final result, which gives {playerName} a total of {playerInfo[player][0]}")
         else:
-            print(f"{playerName}'s final score is {playerInfo[player][0]}")
-                
-    
+            print(f"{playerName}'s final score is {playerInfo[player][0]}") 
 else: 
-    print("First run of program, please input your players and their initiative dice in the code before running again")
-    # Put a players name and dice in like this "playername": "playerdice", seperated by a coma in between different players
+    print("First run of program, please create players.json and input your players and their initiative dice in dictionary format before running again")
+    # Put a players name and dice in like this {"playername": "playerdice"} seperated by a coma in between different players
     main.FirstRun({})
